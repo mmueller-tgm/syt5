@@ -4,19 +4,21 @@
 \BOOKMARK [2][-]{subsection.1.3}{Aufgabenstellung}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.4}{Bewertung}{section.1}% 5
 \BOOKMARK [2][-]{subsection.1.5}{Quellen}{section.1}% 6
-\BOOKMARK [1][-]{section.2}{Einstieg}{}% 7
-\BOOKMARK [1][-]{section.3}{Erkl\344rung der Codebase}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{pom.xml}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{src/main/java/com/hellokoding/auth/model/User.java}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.3}{src/main/java/com/hellokoding/auth/model/Role.java}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.4}{Spring Security}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.5}{Spring Validator}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.6}{Controller \(Endpunkte\)}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{Unittests}{}% 15
-\BOOKMARK [2][-]{subsubsection.4.0.1}{Ansprechen der REST Schnittstelle}{section.4}% 16
-\BOOKMARK [3][-]{subsubsection.4.0.2}{Registrieren eines Benutzers}{subsubsection.4.0.1}% 17
-\BOOKMARK [3][-]{subsubsection.4.0.3}{test\137create\137user}{subsubsection.4.0.1}% 18
-\BOOKMARK [3][-]{subsubsection.4.0.4}{test\137create\137user\137short\137pw}{subsubsection.4.0.1}% 19
-\BOOKMARK [3][-]{subsubsection.4.0.5}{test\137create\137user\137short\137un}{subsubsection.4.0.1}% 20
-\BOOKMARK [3][-]{subsubsection.4.0.6}{test\137login}{subsubsection.4.0.1}% 21
-\BOOKMARK [3][-]{subsubsection.4.0.7}{test\137login\137false}{subsubsection.4.0.1}% 22
+\BOOKMARK [1][-]{section.2}{Code}{}% 7
+\BOOKMARK [1][-]{section.3}{Einstieg}{}% 8
+\BOOKMARK [1][-]{section.4}{Ausf\374hren des Codes}{}% 9
+\BOOKMARK [1][-]{section.5}{Erkl\344rung der Codebase}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{pom.xml}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.2}{src/main/java/com/hellokoding/auth/model/User.java}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{src/main/java/com/hellokoding/auth/model/Role.java}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.4}{Spring Security}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.5}{Spring Validator}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.6}{Controller \(Endpunkte\)}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Unittests}{}% 17
+\BOOKMARK [2][-]{subsubsection.6.0.1}{Ansprechen der REST Schnittstelle}{section.6}% 18
+\BOOKMARK [3][-]{subsubsection.6.0.2}{Registrieren eines Benutzers}{subsubsection.6.0.1}% 19
+\BOOKMARK [3][-]{subsubsection.6.0.3}{test\137create\137user}{subsubsection.6.0.1}% 20
+\BOOKMARK [3][-]{subsubsection.6.0.4}{test\137create\137user\137short\137pw}{subsubsection.6.0.1}% 21
+\BOOKMARK [3][-]{subsubsection.6.0.5}{test\137create\137user\137short\137un}{subsubsection.6.0.1}% 22
+\BOOKMARK [3][-]{subsubsection.6.0.6}{test\137login}{subsubsection.6.0.1}% 23
+\BOOKMARK [3][-]{subsubsection.6.0.7}{test\137login\137false}{subsubsection.6.0.1}% 24

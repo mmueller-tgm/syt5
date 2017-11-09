@@ -5,19 +5,21 @@
 \contentsline {subsection}{\numberline {1.3}Aufgabenstellung}{1}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Bewertung}{1}{subsection.1.4}
 \contentsline {subsection}{\numberline {1.5}Quellen}{2}{subsection.1.5}
-\contentsline {section}{\numberline {2}Einstieg}{3}{section.2}
-\contentsline {section}{\numberline {3}Erkl\"arung der Codebase}{3}{section.3}
-\contentsline {subsection}{\numberline {3.1}pom.xml}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}src/main/java/com/hellokoding/auth/model/User.java}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}src/main/java/com/hellokoding/auth/model/Role.java}{3}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Spring Security}{3}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Spring Validator}{3}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Controller (Endpunkte)}{4}{subsection.3.6}
-\contentsline {section}{\numberline {4}Unittests}{5}{section.4}
-\contentsline {subsubsection}{\numberline {4.0.1}Ansprechen der REST Schnittstelle}{5}{subsubsection.4.0.1}
-\contentsline {subsubsection}{\numberline {4.0.2}Registrieren eines Benutzers}{5}{subsubsection.4.0.2}
-\contentsline {subsubsection}{\numberline {4.0.3}test\_create\_user}{5}{subsubsection.4.0.3}
-\contentsline {subsubsection}{\numberline {4.0.4}test\_create\_user\_short\_pw}{5}{subsubsection.4.0.4}
-\contentsline {subsubsection}{\numberline {4.0.5}test\_create\_user\_short\_un}{6}{subsubsection.4.0.5}
-\contentsline {subsubsection}{\numberline {4.0.6}test\_login}{6}{subsubsection.4.0.6}
-\contentsline {subsubsection}{\numberline {4.0.7}test\_login\_false}{7}{subsubsection.4.0.7}
+\contentsline {section}{\numberline {2}Code}{3}{section.2}
+\contentsline {section}{\numberline {3}Einstieg}{3}{section.3}
+\contentsline {section}{\numberline {4}Ausf\"uhren des Codes}{3}{section.4}
+\contentsline {section}{\numberline {5}Erkl\"arung der Codebase}{3}{section.5}
+\contentsline {subsection}{\numberline {5.1}pom.xml}{3}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}src/main/java/com/hellokoding/auth/model/User.java}{3}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}src/main/java/com/hellokoding/auth/model/Role.java}{3}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Spring Security}{3}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Spring Validator}{4}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Controller (Endpunkte)}{4}{subsection.5.6}
+\contentsline {section}{\numberline {6}Unittests}{5}{section.6}
+\contentsline {subsubsection}{\numberline {6.0.1}Ansprechen der REST Schnittstelle}{5}{subsubsection.6.0.1}
+\contentsline {subsubsection}{\numberline {6.0.2}Registrieren eines Benutzers}{5}{subsubsection.6.0.2}
+\contentsline {subsubsection}{\numberline {6.0.3}test\_create\_user}{5}{subsubsection.6.0.3}
+\contentsline {subsubsection}{\numberline {6.0.4}test\_create\_user\_short\_pw}{6}{subsubsection.6.0.4}
+\contentsline {subsubsection}{\numberline {6.0.5}test\_create\_user\_short\_un}{6}{subsubsection.6.0.5}
+\contentsline {subsubsection}{\numberline {6.0.6}test\_login}{6}{subsubsection.6.0.6}
+\contentsline {subsubsection}{\numberline {6.0.7}test\_login\_false}{7}{subsubsection.6.0.7}
