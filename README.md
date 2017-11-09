@@ -16,7 +16,10 @@ https://hellokoding.com/register-and-login-example-with-spring-security-spring-b
 - HSQL
 
 ## Run
-```mvn clean spring-boot:run```
+```
+cd registration-login-spring-hsql/
+mvn clean spring-boot:run
+```
 
 ## Test
-```python3.5 tests.py```
+```python3.5 unittest/tests.py```
