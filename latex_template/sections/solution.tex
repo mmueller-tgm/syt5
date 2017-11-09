@@ -1,0 +1,257 @@
+%!TEX root=../document.tex
+\section{Einstieg}
+Am Anfang wollte ich, durch verschiedene Tutorials selber in Java/Node den REST
+ Service implementieren aber nach mehreren Problemen mit Packages wurde ich auf
+ ein Tutorial\footnote{\href{https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot-spring-data-jpa-hsql-jsp/}{https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot
+-spring-data-jpa-hsql-jsp/}} hingewiesen, welches mehr oder weniger die Aufgabe
+ abbildet.
+
+Voraussetzung ist JDK1.7 oder später und Maven 3 zum Builden und Deployen.
+Den Sourcecode erhält man mit GIT ,,git clone git@github.com:hellokoding/
+registration-login-spring-hsql.git``. 
+
+Per default ist ,,/login`` schon als Endpunkt konfiguriert ist aber ,,/register``
+ nicht. Um ,,/registration`` auf ,,/register`` umzuleiten habe ich folgendes
+ Command verwendet:
+\begin{lstlisting}[language=Python]
+	find . -type f -exec sed -i 's/registration/register/g' {} +
+\end{lstlisting}
+Es sucht in jedem File in dem Ordner und tauscht ,,registration`` mit
+ ,,register`` aus.
+ 
+\section{Ausf\"uhren des Codes}
+Deployed wird mit ,,mvn clean spring-boot:run``, Test cases mit ,,python3.5 tests.py``. Der Service rennt auf ,,localhost:8080``.
+ 
+\section{Erkl\"arung der Codebase}
+\subsection{pom.xml}
+Da die Buildumgebung Maven ist, werden in ,,pom.xml`` die benötigten Packages angegeben.
+
+\subsection{src/main/java/com/hellokoding/auth/model/User.java}
+Hier wird die Struktur der User Tabelle bzw. das User Objekt definiert.
+
+\subsection{src/main/java/com/hellokoding/auth/model/Role.java}
+Hier wird die Struktur der Role Tabelle bzw. das Role Objekt definiert.
+
+\subsection{Spring Security}
+In ,,src/main/java/com/hellokoding/auth/service/SecurityServiceImpl.java`` werden eingeloggte User und neu erstellte User authentifiziert.
+
+In ,,src/main/java/com/hellokoding/auth/service/UserServiceImpl.java`` wird das Service zum registrieren von Usern bereitgestellt.
+
+\subsection{Spring Validator}  
+In ,,src/main/java/com/hellokoding/auth/validator/UserValidator.java`` werden angegebene Userdaten Validiert, die bei dem Registrieren angegeben werden.
+
+\subsection{Controller (Endpunkte)}
+,,src/main/java/com/hellokoding/auth/web/UserController.java`` handeld alle POST und GET Requests. 
+
+\begin{lstlisting}[language = Java]
+package com.hellokoding.auth.web;
+
+import com.hellokoding.auth.model.User;
+import com.hellokoding.auth.service.SecurityService;
+import com.hellokoding.auth.service.UserService;
+import com.hellokoding.auth.validator.UserValidator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class UserController {
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private SecurityService securityService;
+
+    @Autowired
+    private UserValidator userValidator;
+
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    public String register(Model model) {
+        model.addAttribute("userForm", new User());
+
+        return "register";
+    }
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public String register(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
+        userValidator.validate(userForm, bindingResult);
+
+        if (bindingResult.hasErrors()) {
+            return "register";
+        }
+
+        userService.save(userForm);
+
+        securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
+
+        return "redirect:/welcome";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String login(Model model, String error, String logout) {
+        if (error != null)
+            model.addAttribute("error", "Your username and password is invalid.");
+
+        if (logout != null)
+            model.addAttribute("message", "You have been logged out successfully.");
+
+        return "login";
+    }
+
+    @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
+    public String welcome(Model model) {
+        return "welcome";
+    }
+}
+\end{lstlisting}
+
+\section{Unittests}
+Unittests wurden mit den Python Bibliotheken ,,unittests`` und ,,requests`` 
+durchgeführt. 
+
+\subsubsection{Ansprechen der REST Schnittstelle}
+Um mit dem Service zu kommunizieren müssen, per Definition, HTTP Requests 
+gesendet werden. Dazu eignet sich besonders die Bibliothek ,,requests``.
+
+\subsubsection{Registrieren eines Benutzers}
+Um einen Benutzer zu registrieren muss zuerst ein Request zu /register gemacht 
+werden, um einen Sessionkey und einen csrf-Key zu bekommen.  
+\begin{lstlisting}[language=Python]
+x = requests.get("%sregister"%self.server)
+cookies = x.cookies
+x = BeautifulSoup(x.text, 'html.parser')
+x = x.find_all("input")
+payload={}
+for y in x:
+	if y["name"] == "_csrf":
+	    payload[y["name"]] = y["value"]
+\end{lstlisting}
+
+Mit diesen Keys kann man dann mit POST einen User erstellen.
+
+\begin{lstlisting}[language=Python]
+payload["username"] = "test_%s"%''.join(random.sample('0123456789',5))
+payload["password"] = '123456789'
+payload["passwordConfirm"] = '123456789'
+response = requests.post("%sregister"%self.server, payload, cookies=id)
+\end{lstlisting}
+
+\subsubsection{test\_create\_user}
+Dieser Testfall erstellt einen Benutzer und checkt ob dieser eingeloggt wird.
+\begin{lstlisting}[language=Python]
+user="test_%s"%''.join(random.sample('0123456789',5))
+response = self.create_user(user=user)
+y = BeautifulSoup(response.text, 'html.parser').find_all("form")
+y2 = BeautifulSoup(response.text, 'html.parser').find_all("span")
+
+for z in y:
+    if z['id'] == 'logoutForm':
+        self.assertTrue(True, "Logged in successfully")
+        return
+self.assertTrue(False)
+\end{lstlisting}
+
+\subsubsection{test\_create\_user\_short\_pw}
+Dieser Testfall erstellt einen Benutzer mit zu kurzem Passwort und checkt, ob
+ dieser eingeloggt wird, wenn ja, dann failt der Test.
+\begin{lstlisting}[language=Python]
+user="test_%s"%''.join(random.sample('0123456789',5))
+response = self.create_user(user=user, passwd='1234567')
+y = BeautifulSoup(response.text, 'html.parser').find_all("form")
+y2 = BeautifulSoup(response.text, 'html.parser').find_all("span")
+
+for z in y:
+    if z['id'] == 'logoutForm':
+        self.assertTrue(False, "Should not have been able to login.")
+        return
+
+for z in y2:
+    if z['id'] == 'passeord.errors':
+        self.assertTrue(True)
+        return
+    if z['id'] == 'username.errors':
+        self.assertTrue(False, "Should not have username errors:")
+\end{lstlisting}
+
+\subsubsection{test\_create\_user\_short\_un}
+Dieser Testfall erstellt einen Benutzer mit zu kurzem Usernamen und checkt, ob
+ dieser eingeloggt wird, wenn Ja, dann failt der Test.
+\begin{lstlisting}[language=Python]
+user="test_"
+response = self.create_user(user=user, passwd='12345678')
+y = BeautifulSoup(response.text, 'html.parser').find_all("form")
+y2 = BeautifulSoup(response.text, 'html.parser').find_all("span")
+
+for z in y:
+    if z['id'] == 'logoutForm':
+        self.assertTrue(False, "Should not have been able to login.")
+        return
+
+for z in y2:
+    if z['id'] == 'passeord.errors':
+        self.assertTrue(False, "Password should be long enough.")
+        return
+    if z['id'] == 'username.errors':
+        if z.next == "Please use between 6 and 32 characters.":
+            self.assertTrue(True, "Should not have username errors:")
+        else:
+            self.assertTrue(False, "UN should be unique")
+\end{lstlisting}
+
+\subsubsection{test\_login}
+Dieser Testfall erstellt einen Benutzer. In einer anderen Session loggt er sich
+ dann ein. Bei erfolgreichem einloggen ist auch der Testfall erfolgreich. 
+\begin{lstlisting}[language=Python]
+user = "test_%s" % ''.join(random.sample('0123456789', 5))
+passwd = "123456789"
+self.create_user(user, passwd=passwd)
+x = requests.get("%slogin"%self.server)
+id = x.cookies
+x = BeautifulSoup(x.text, 'html.parser')
+x = x.find_all("input")
+payload={"username":user, "password":passwd}
+for y in x:
+    if y["name"] == "_csrf":
+        payload[y["name"]] = y["value"]
+
+response = requests.post("%slogin"%self.server, payload, cookies=id)
+response = BeautifulSoup(response.text, 'html.parser')
+y = BeautifulSoup(response.text, 'html.parser').find_all("form")
+for z in y:
+    if z['id'] == 'logoutForm':
+        self.assertTrue(True, "Logged in successfully")
+        return
+    self.assertTrue(False)
+\end{lstlisting}
+
+\subsubsection{test\_login\_false}
+Dieser Testfall erstellt einen Benutzer. In einer anderen Session loggt er sich
+ dann mit falschem Passwort ein. Bei erfolgreichem Einloggen ist der Testfall nicht erfolgreich. 
+\begin{lstlisting}[language=Python]
+user = "test_%s" % ''.join(random.sample('0123456789', 5))
+passwd = "123456789"
+self.create_user(user, passwd=passwd)
+x = requests.get("%slogin"%self.server)
+id = x.cookies
+x = BeautifulSoup(x.text, 'html.parser')
+x = x.find_all("input")
+payload={"username":user, "password":passwd+"x"}
+for y in x:
+    if y["name"] == "_csrf":
+        payload[y["name"]] = y["value"]
+
+response = requests.post("%slogin"%self.server, payload, cookies=id)
+response = BeautifulSoup(response.text, 'html.parser')
+y = BeautifulSoup(response.text, 'html.parser').find_all("form")
+
+for z in y:
+    if z['id'] == 'logoutForm':
+        self.assertTrue(False, "Used Wrong PW, should not have logged in")
+        return
+    self.assertTrue(True)
+\end{lstlisting}
+

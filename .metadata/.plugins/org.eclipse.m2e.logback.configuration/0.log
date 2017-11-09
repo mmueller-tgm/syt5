@@ -1,0 +1,171 @@
+2017-10-12 16:05:27,125 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-12 16:06:37,925 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.18.1/maven-surefire-plugin-2.18.1.jar
+2017-10-12 16:06:57,954 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.5/maven-war-plugin-2.5.jar
+2017-10-12 16:07:17,985 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+2017-10-12 16:07:38,007 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+2017-10-12 16:07:58,035 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.4/maven-site-plugin-3.4.jar
+2017-10-12 16:07:58,856 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-12 16:07:59,770 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/main/java
+2017-10-12 16:07:59,772 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:07:59,775 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:07:59,776 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/test/java
+2017-10-12 16:08:00,732 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 105 sec
+2017-10-12 16:08:01,014 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-10-12 16:08:01,960 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-12 16:08:02,595 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/main/java
+2017-10-12 16:08:02,595 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:08:02,596 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:08:02,597 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/test/java
+2017-10-12 16:08:02,938 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-10-12 16:08:03,864 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:08:03,869 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:08:03,913 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:08:03,918 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:08:03,919 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:26:14,337 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:26:14,404 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:26:14,406 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:26:14,410 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:26:14,410 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:26:22,920 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-12 16:26:22,921 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-10-12 16:26:27,888 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:26:27,889 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:26:27,893 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:26:27,898 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:26:27,898 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:31:00,365 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-10-12 16:31:01,268 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-12 16:31:02,169 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/main/java
+2017-10-12 16:31:02,171 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:31:02,173 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:31:02,176 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/test/java
+2017-10-12 16:31:02,460 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2017-10-12 16:31:03,442 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:31:03,445 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:31:03,479 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:31:03,483 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:31:03,484 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:31:15,117 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-12 16:31:15,117 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-10-12 16:31:18,855 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:31:18,867 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:31:18,869 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:31:18,899 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:31:18,900 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:31:28,423 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-10-12 16:31:35,338 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-10-12 16:33:47,479 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:33:47,480 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:33:47,481 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:33:47,497 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:33:47,498 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:34:26,626 [Worker-21] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-10-12 16:34:27,207 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-12 16:34:27,950 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/main/java
+2017-10-12 16:34:27,958 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:34:27,960 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /registration-login-spring-hsql/src/main/resources
+2017-10-12 16:34:27,961 [Worker-21] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /registration-login-spring-hsql/src/test/java
+2017-10-12 16:34:28,183 [Worker-21] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-10-12 16:34:29,443 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:34:29,447 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:34:29,484 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:34:29,492 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:34:29,497 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:42:06,731 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-12 16:42:14,871 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-12 16:42:16,773 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:42:16,781 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:42:16,812 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-12 16:42:16,821 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:42:16,821 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:42:19,173 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-12 16:42:22,340 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:42:22,349 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-12 16:42:22,349 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-12 16:42:22,356 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:42:22,356 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-12 16:43:27,079 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:43:27,080 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-12 16:43:27,080 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-12 16:43:27,085 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-12 16:43:27,085 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-13 10:10:46,840 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-13 10:10:46,864 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-13 10:10:46,905 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-13 10:10:46,923 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-13 10:10:46,924 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 20:38:16,267 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-18 20:38:17,559 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 20:38:17,569 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 20:38:17,624 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 20:38:17,633 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 20:38:17,633 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 20:38:18,674 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-18 20:38:21,437 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 20:38:21,440 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-18 20:38:21,440 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-18 20:38:21,443 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 20:38:21,443 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 20:52:37,285 [Worker-16] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-10-18 21:08:04,523 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:08:04,524 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean
+2017-10-18 21:08:08,812 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 21:08:08,815 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 21:08:08,818 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 21:08:08,828 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 21:08:08,828 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 21:09:02,959 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:09:02,959 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-18 21:09:39,424 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:09:39,424 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-18 21:09:41,625 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:09:41,626 [Worker-17] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-18 21:09:46,194 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:09:46,194 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-18 21:10:02,552 [Worker-16] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:10:02,552 [Worker-16] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-18 21:11:23,058 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql
+2017-10-18 21:11:23,058 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2017-10-18 23:01:41,503 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-18 23:01:42,267 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:01:42,274 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-18 23:01:42,274 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-10-18 23:01:42,278 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:01:42,278 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 23:01:43,946 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:01:43,947 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 23:01:43,970 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 23:01:43,975 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:01:43,975 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 23:01:47,822 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-18 23:01:48,244 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:01:48,248 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 23:01:48,275 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 23:01:48,281 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:01:48,281 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-18 23:05:01,256 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:05:01,269 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 23:05:01,270 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-18 23:05:01,277 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-18 23:05:01,277 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-19 09:18:11,057 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-19 09:18:16,352 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.boot:auth:1.3.5.RELEASE @ /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/pom.xml.
+2017-10-19 09:18:20,228 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-19 09:18:20,274 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-19 09:18:20,370 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-19 09:18:20,387 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-19 09:18:20,388 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-10-19 13:34:12,978 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-19 16:05:02,817 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-10-19 17:14:58,552 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-19 17:14:58,568 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-19 17:14:58,589 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-10-19 17:14:58,594 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-10-19 17:14:58,597 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-11-09 12:25:17,378 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-09 12:25:17,391 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-11-09 12:25:17,408 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-11-09 12:25:17,413 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-11-09 12:25:17,413 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/max/Documents/Schule/_5BHIT/A_SYT/BORM/10-12/registration-login-spring-hsql/src/test/resources
+2017-11-09 12:25:17,629 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

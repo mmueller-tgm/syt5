@@ -1,0 +1,51 @@
+%!TEX root=../document.tex
+\section{Einf\"uhrung}
+Diese Übung zeigt die Anwendung von mobilen Diensten.
+\subsection{Ziele}
+Das Ziel dieser Übung ist eine Webanbindung zur Benutzeranmeldung umzusetzen. Dabei soll sich ein Benutzer registrieren und am System anmelden können.
+
+Die Kommunikation zwischen Client und Service soll mit Hilfe einer REST Schnittstelle umgesetzt werden.
+
+\subsection{Voraussetzungen}
+\begin{itemize}
+	\item Grundlagen einer höheren Programmiersprache
+	\item Verständnis über relationale Datenbanken und dessen Anbindung mittels ODBC oder ORM-Frameworks
+	\item Verständnis von Restful Webservices
+\end{itemize}
+
+\subsection{Aufgabenstellung}
+Es ist ein Webservice zu implementieren, welches eine einfache Benutzerverwaltung implementiert. Dabei soll die Webapplikation mit den Endpunkten /register und /login erreichbar sein.
+
+\textit{Registrierung}
+Diese soll mit einem Namen, einer eMail-Adresse als BenutzerID und einem Passwort erfolgen. Dabei soll noch auf keine besonderen Sicherheitsmerkmale Wert gelegt werden. Bei einer erfolgreichen Registrierung (alle Elemente entsprechend eingegeben) wird der Benutzer in eine Datebanktabelle abgelegt.
+
+\textit{Login}
+Der Benutzer soll sich mit seiner ID und seinem Passwort entsprechend authentifizieren können. Bei einem erfolgreichen Login soll eine einfache Willkommensnachricht angezeigt werden.
+
+Die erfolgreiche Implementierung soll mit entsprechenden Testfällen (Acceptance-Tests bez. aller funktionaler Anforderungen mittels Unit-Tests) dokumentiert werden. Verwenden Sie auf jeden Fall ein gängiges Build-Management-Tool (z.B. Maven oder Gradle). Dabei ist zu beachten, dass ein einfaches Deployment möglich ist (auch Datenbank mit z.B. file-based DBMS).
+
+\subsection{Bewertung}
+\begin{itemize}
+	\item Gruppengrösse: 1 Person
+	\item Anforderungen ''\"uberwiegend erfüllt''
+	\begin{itemize}
+		\item Dokumentation und Beschreibung der angewendeten Schnittstelle
+		\item Aufsetzen einer Webservice-Schnittstelle
+		\item Registrierung von Benutzern mit entsprechender Persistierung
+	\end{itemize}
+	\item Anforderungen ''zur G\"anze erfüllt''
+	\begin{itemize}
+		\item Login und Rückgabe einer Willkommensnachricht
+		\item Überprüfung der funktionalen Anforderungen mittels Regressionstests
+	\end{itemize}
+\end{itemize}
+
+\subsection{Quellen}
+\href{http://programmerguru.com/android-tutorial/android-restful-webservice-tutorial-part-1/}{"Android Restful Webservice Tutorial – Introduction to RESTful webservice – Part 1"; Posted By Android Guru on May 1, 2014;} \\
+\href{http://www.vogella.com/tutorials/REST/article.html}{"REST with Java (JAX-RS) using Jersey - Tutorial"; Lars Vogel; Version 2.7; 27.09.2017;} \\
+\href{https://github.com/spring-guides/gs-rest-service}{"Creating a 'hello world' RESTful web service with Spring."; Spring examples;}\\
+\href{https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot-spring-data-jpa-hsql-jsp/}{"Registration and Login Example with Spring Boot, Spring Security, Spring Data JPA, and HSQL"; Giau Ngo; 5.7.2016;}\\
+\href{http://www.django-rest-framework.org/}{"Django REST framework"; Tom Christie;}\\
+\href{http://python-eve.org/}{"Eve. The Simple Way to REST"; Nicola Iarocci;}\\
+\href{https://www.heroku.com/}{"Heroku makes it easy to deploy and scale Java apps in the cloud";}\\
+\clearpage

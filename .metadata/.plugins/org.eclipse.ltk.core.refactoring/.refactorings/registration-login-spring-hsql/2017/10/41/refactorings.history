@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;registration-login-spring-hsql/src/main/webapp/registration.jsp&apos; to &apos;register.jsp&apos;" description="Rename resource &apos;registration.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/registration.jsp" name="register.jsp" stamp="1507818826911" updateReferences="true"/>
+</session>
